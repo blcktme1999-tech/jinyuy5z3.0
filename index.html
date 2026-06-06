@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>長照重陽｜免費照服員培訓，加入長照3.0新時代</title>
+  <meta name="description" content="政府長照3.0補助正式上路！長照重陽提供完全免費的照服員培訓課程，取得證照後立即媒合工作，月薪3萬起，穩定就業，助人助己。立即加入LINE了解詳情。" />
+  <meta name="keywords" content="長照3.0,照服員培訓,免費長照課程,居家服務員,長照補助,長照工作,照顧服務員,長照重陽" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="長照重陽｜免費照服員培訓，加入長照3.0新時代" />
+  <meta property="og:description" content="政府長照3.0補助正式上路！完全免費培訓，取得證照後立即媒合工作，月薪3萬起。" />
+  <meta property="og:image" content="hero.jpg" />
+  <meta property="og:locale" content="zh_TW" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="長照重陽｜免費照服員培訓，加入長照3.0新時代" />
+  <meta name="twitter:description" content="政府長照3.0補助正式上路！完全免費培訓，取得證照後立即媒合工作，月薪3萬起。" />
+  <meta name="twitter:image" content="hero.jpg" />
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "長照重陽",
+    "description": "提供完全免費的長照照服員培訓課程，協助求職者取得長照服務人員證明並媒合工作",
+    "url": "https://changzhao-chongyang.com",
+    "sameAs": ["https://line.me/ti/p/VqdhzGY5_z"],
+    "offers": {
+      "@type": "Offer",
+      "name": "免費照服員培訓課程",
+      "price": "0",
+      "priceCurrency": "TWD",
+      "description": "200小時完整照服員培訓，取得長照服務人員證明，結訓後立即媒合工作"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; color: #1a1a1a; background: #fff; line-height: 1.6; }
+
+    /* ── Variables ── */
+    :root {
+      --green: #1d7a5f;
+      --green-dark: #155a47;
+      --green-light: #e8f5f0;
+      --amber: #f59e0b;
+      --amber-light: #fef3c7;
+      --line-green: #06C755;
+      --line-dark: #05a847;
+    }
+
+    /* ── Navbar ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0 1.5rem;
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo { font-size: 1.25rem; font-weight: 900; color: var(--green); text-decoration: none; }
+    .nav-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--line-green); color: #fff;
+      font-weight: 700; font-size: 0.95rem;
+      padding: 10px 22px; border-radius: 50px;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .nav-cta:hover { background: var(--line-dark); transform: translateY(-1px); }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative; overflow: hidden;
+      min-height: 90vh; display: flex; align-items: center;
+      background: linear-gradient(135deg, #0f3d2e 0%, #1d7a5f 50%, #2a9d7f 100%);
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('hero.jpg');
+      background-size: cover; background-position: center;
+      opacity: 0.25;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to right, rgba(15,61,46,0.92) 0%, rgba(15,61,46,0.7) 50%, rgba(15,61,46,0.3) 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 1100px; margin: 0 auto; padding: 5rem 1.5rem;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
+    }
+    @media(max-width:768px){ .hero-content { grid-template-columns: 1fr; } }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(245,158,11,0.2); border: 1px solid rgba(245,158,11,0.5);
+      color: #fcd34d; font-size: 0.875rem; font-weight: 600;
+      padding: 6px 16px; border-radius: 50px; margin-bottom: 1.5rem;
+    }
+    .hero-badge span { width: 8px; height: 8px; background: #fcd34d; border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.2)} }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 900; color: #fff; line-height: 1.2; margin-bottom: 1.25rem;
+    }
+    .hero h1 em { color: #fcd34d; font-style: normal; }
+    .hero-sub { font-size: 1.125rem; color: rgba(255,255,255,0.85); margin-bottom: 2rem; line-height: 1.7; }
+    .btn-line {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--line-green); color: #fff;
+      font-weight: 700; font-size: 1.1rem;
+      padding: 16px 36px; border-radius: 50px;
+      text-decoration: none; transition: all 0.2s;
+      box-shadow: 0 8px 24px rgba(6,199,85,0.35);
+    }
+    .btn-line:hover { background: var(--line-dark); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(6,199,85,0.45); }
+    .btn-line svg { width: 22px; height: 22px; }
+    .hero-stats {
+      display: flex; gap: 1.5rem; margin-top: 2.5rem; flex-wrap: wrap;
+    }
+    .hero-stat { text-align: center; }
+    .hero-stat-num { font-size: 2rem; font-weight: 900; color: #fcd34d; display: block; }
+    .hero-stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.7); }
+
+    .hero-card {
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 20px; padding: 2rem;
+      color: #fff;
+    }
+    @media(max-width:768px){ .hero-card { display: none; } }
+    .hero-card-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 1.25rem; color: #fcd34d; }
+    .hero-card-item {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .hero-card-item:last-child { border-bottom: none; }
+    .hero-card-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .hero-card-text { font-size: 0.95rem; line-height: 1.5; }
+    .hero-card-text strong { color: #fcd34d; display: block; font-size: 1rem; }
+
+    /* ── Announcement Banner ── */
+    .banner {
+      background: linear-gradient(90deg, var(--amber) 0%, #f97316 100%);
+      padding: 14px 1.5rem; text-align: center;
+    }
+    .banner-inner { max-width: 1100px; margin: 0 auto; }
+    .banner p { color: #fff; font-weight: 700; font-size: 1rem; }
+    .banner a { color: #fff; text-decoration: underline; }
+
+    /* ── Section base ── */
+    section { padding: 5rem 1.5rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-header { text-align: center; margin-bottom: 3.5rem; }
+    .section-tag {
+      display: inline-block; background: var(--green-light); color: var(--green);
+      font-size: 0.85rem; font-weight: 700; padding: 4px 14px; border-radius: 50px;
+      margin-bottom: 1rem; letter-spacing: 0.05em;
+    }
+    .section-title { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 900; color: #111; margin-bottom: 0.75rem; }
+    .section-sub { font-size: 1.05rem; color: #555; max-width: 600px; margin: 0 auto; }
+
+    /* ── Why Now (長照3.0) ── */
+    .why-now { background: var(--green-light); }
+    .timeline { display: flex; flex-direction: column; gap: 0; max-width: 700px; margin: 0 auto; }
+    .timeline-item {
+      display: flex; gap: 1.5rem; position: relative; padding-bottom: 2rem;
+    }
+    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-left { display: flex; flex-direction: column; align-items: center; }
+    .timeline-dot {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: var(--green); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.25rem; flex-shrink: 0; z-index: 1;
+    }
+    .timeline-line {
+      width: 2px; flex: 1; background: linear-gradient(to bottom, var(--green), rgba(29,122,95,0.2));
+      margin-top: 4px;
+    }
+    .timeline-item:last-child .timeline-line { display: none; }
+    .timeline-body { padding-top: 10px; }
+    .timeline-date {
+      font-size: 0.8rem; font-weight: 700; color: var(--green);
+      text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px;
+    }
+    .timeline-title { font-size: 1.1rem; font-weight: 800; color: #111; margin-bottom: 6px; }
+    .timeline-desc { font-size: 0.95rem; color: #444; line-height: 1.6; }
+    .timeline-tag {
+      display: inline-block; background: var(--amber-light); color: #92400e;
+      font-size: 0.75rem; font-weight: 700; padding: 2px 10px; border-radius: 50px;
+      margin-top: 6px;
+    }
+
+    /* ── Features (免費培訓) ── */
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.75rem; }
+    .feature-card {
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 16px;
+      padding: 2rem; transition: all 0.25s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(29,122,95,0.12); border-color: var(--green); }
+    .feature-icon {
+      width: 56px; height: 56px; border-radius: 14px;
+      background: var(--green-light); display: flex; align-items: center; justify-content: center;
+      font-size: 1.75rem; margin-bottom: 1.25rem;
+    }
+    .feature-title { font-size: 1.1rem; font-weight: 800; color: #111; margin-bottom: 0.5rem; }
+    .feature-desc { font-size: 0.95rem; color: #555; line-height: 1.6; }
+
+    /* ── Process Steps ── */
+    .process { background: #f9fafb; }
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+    .step-card { text-align: center; padding: 1.5rem; }
+    .step-num {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--green); color: #fff;
+      font-size: 1.5rem; font-weight: 900;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    .step-title { font-size: 1rem; font-weight: 800; color: #111; margin-bottom: 0.4rem; }
+    .step-desc { font-size: 0.875rem; color: #666; }
+    .step-arrow { display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: #ccc; }
+    @media(max-width:600px){ .step-arrow { display: none; } }
+
+    /* ── Who Can Join ── */
+    .who-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
+    .who-card {
+      display: flex; align-items: flex-start; gap: 14px;
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+    }
+    .who-icon { font-size: 2rem; flex-shrink: 0; }
+    .who-title { font-size: 1rem; font-weight: 700; color: #111; margin-bottom: 4px; }
+    .who-desc { font-size: 0.875rem; color: #666; }
+
+    /* ── Social Proof / Stats ── */
+    .stats { background: var(--green); }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; text-align: center; }
+    .stat-num { font-size: 2.75rem; font-weight: 900; color: #fcd34d; display: block; }
+    .stat-label { font-size: 1rem; color: rgba(255,255,255,0.85); margin-top: 4px; }
+
+    /* ── FAQ ── */
+    .faq-list { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item { border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; }
+    .faq-q {
+      padding: 1.25rem 1.5rem;
+      font-weight: 700; font-size: 1rem; color: #111;
+      cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+      background: #fff; user-select: none;
+    }
+    .faq-q:hover { background: var(--green-light); }
+    .faq-q::after { content: '+'; font-size: 1.5rem; color: var(--green); transition: transform 0.2s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a { display: none; padding: 0 1.5rem 1.25rem; font-size: 0.95rem; color: #444; line-height: 1.7; background: #fff; }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ── Final CTA ── */
+    .final-cta {
+      background: linear-gradient(135deg, #0f3d2e 0%, #1d7a5f 100%);
+      text-align: center; color: #fff;
+    }
+    .final-cta h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 900; margin-bottom: 1rem; }
+    .final-cta h2 em { color: #fcd34d; font-style: normal; }
+    .final-cta p { font-size: 1.1rem; color: rgba(255,255,255,0.85); margin-bottom: 2.5rem; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    /* ── Footer ── */
+    footer {
+      background: #111; color: rgba(255,255,255,0.6);
+      padding: 2.5rem 1.5rem; text-align: center; font-size: 0.875rem;
+    }
+    footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    footer a:hover { color: #fff; }
+    .footer-logo { font-size: 1.25rem; font-weight: 900; color: #fff; margin-bottom: 0.75rem; }
+    .footer-links { display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 1rem; flex-wrap: wrap; }
+
+    /* ── Sticky Bottom Bar (mobile) ── */
+    .sticky-bar {
+      display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+      background: #fff; border-top: 1px solid #e5e7eb;
+      padding: 12px 1.5rem; box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+    }
+    @media(max-width:768px){ .sticky-bar { display: flex; gap: 12px; } }
+    .sticky-bar a { flex: 1; text-align: center; font-weight: 700; font-size: 1rem; padding: 14px; border-radius: 12px; text-decoration: none; }
+    .sticky-bar .btn-line { background: var(--line-green); color: #fff; }
+  </style>
+</head>
+<body>
+
+<!-- ─── Navbar ─── -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">🌿 長照重陽</a>
+    <a href="https://line.me/ti/p/VqdhzGY5_z" target="_blank" rel="noopener" class="nav-cta">
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+      免費諮詢 LINE
+    </a>
+  </div>
+</nav>
+
+<!-- ─── Announcement Banner ─── -->
+<div class="banner">
+  <div class="banner-inner">
+    <p>🎉 長照3.0已正式上路！政府大力補助，照服員需求激增 — <a href="https://line.me/ti/p/VqdhzGY5_z" target="_blank">立即免費報名培訓 →</a></p>
+  </div>
+</div>
+
+<!-- ─── Hero ─── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div>
+      <div class="hero-badge">
+        <span></span>
+        長照3.0 · 2026年全面上路
+      </div>
+      <h1>現在加入長照，<em>零費用</em>取得證照</h1>
+      <p class="hero-sub">
+        政府長照3.0大幅擴充補助，照服員需求急速增加。<br>
+        長照重陽提供<strong style="color:#fcd34d">完全免費</strong>的200小時培訓課程，<br>
+        結訓後立即媒合工作，月薪3萬起，助人助己。
+      </p>
+      <a href="https://line.me/ti/p/VqdhzGY5_z" target="_blank" rel="noopener" class="btn-line">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.630 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+        加入LINE，立即免費報名
+      </a>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">0元</span>
+          <span class="hero-stat-label">培訓費用</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">200小時</span>
+          <span class="hero-stat-label">完整課程</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">3萬+</span>
+          <span class="hero-stat-label">月薪起</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">100%</span>
+          <span class="hero-stat-label">就業媒合</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hero-card-title">📋 長照3.0 新制重點</div>
+      <div class="hero-card-item">
+        <div class="hero-card-icon">🟢</div>
+        <div class="hero-card-text">
+          <strong>2025年9月 已上路</strong>
+          外籍看護家庭可用30%額度申請社區服務，照服員需求激增
+        </div>
+      </div>
+      <div class="hero-card-item">
+        <div class="hero-card-icon">🔵</div>
+        <div class="hero-card-text">
+          <strong>2026年1月 擴大對象</strong>
+          全年齡失智者均可申請，服務量大幅增加
+        </div>
+      </div>
+      <div class="hero-card-item">
+        <div class="hero-card-icon">🟡</div>
+        <div class="hero-card-text">
+          <strong>2026年7月 智慧輔具</strong>
+          每3年最高6萬元智慧輔具補助，服務升級
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Why Now ─── -->
+<section class="why-now">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">為什麼是現在？</div>
+      <h2 class="section-title">長照3.0，台灣最大的就業機會</h2>
+      <p class="section-sub">台灣已進入超高齡社會，政府分三階段全面升級長照補助，照服員人力缺口龐大，現在入行正是最佳時機。</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-left">
+          <div class="timeline-dot">🚀</div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-body">
+          <div class="timeline-date">2025年9月1日 · 第一階段</div>
+          <div class="timeline-title">居家服務需求大爆發</div>
+          <div class="timeline-desc">外籍看護家庭可使用30%長照額度申請社區服務；交通接送補助調升至每趟115元；居家喘息服務範圍擴大。<strong>居家照服員需求立即增加。</strong></div>
+          <span class="timeline-tag">✅ 已上路</span>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-left">
+          <div class="timeline-dot">📈</div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-body">
+          <div class="timeline-date">2026年1月1日 · 第二階段</div>
+          <div class="timeline-title">全年齡失智者納入補助</div>
+          <div class="timeline-desc">不再限制年齡，全年齡失智者及急性後期照護對象均可申請長照服務，服務對象大幅擴增，<strong>照服員人力需求倍增。</strong></div>
+          <span class="timeline-tag">⏰ 已上路</span>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-left">
+          <div class="timeline-dot">🤖</div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-body">
+          <div class="timeline-date">2026年7月1日 · 第三階段</div>
+          <div class="timeline-title">智慧科技輔具租賃補助</div>
+          <div class="timeline-desc">每3年最高6萬元智慧輔具補助，包含移位、沐浴排泄、安全看視等設備，<strong>照服員工作品質與薪資同步提升。</strong></div>
+          <span class="timeline-tag" style="background:#dbeafe;color:#1e40af;">📅 即將上路</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Features ─── -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">長照重陽的優勢</div>
+      <h2 class="section-title">免費培訓，讓你零風險入行</h2>
+      <p class="section-sub">我們承擔所有培訓成本，你只需要帶著熱忱來，其餘交給我們。</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">💰</div>
+        <div class="feature-title">完全免費，零負擔</div>
+        <div class="feature-desc">200小時完整照服員課程，學費全額由公司負擔，學員不需支付任何費用，讓你零風險探索新職涯。</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📜</div>
+        <div class="feature-title">取得官方認可證照</div>
+        <div class="feature-desc">結訓後協助申請衛生局「長照服務人員證明」，取得政府認可的合法執業資格，讓你在長照市場更有競爭力。</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🤝</div>
+        <div class="feature-title">結訓立即媒合工作</div>
+        <div class="feature-desc">長照重陽擁有大量服務訂單，結訓後由專人協助就業媒合，優先安排距離近的個案，不用擔心找不到工作。</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏰</div>
+        <div class="feature-title">彈性工時，兼顧家庭</div>
+        <div class="feature-desc">居家服務可依個人時間安排，全職兼職均可。特別適合有家庭需求、想二度就業或中高齡求職的朋友。</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📚</div>
+        <div class="feature-title">專業師資，系統教學</div>
+        <div class="feature-desc">由具備長照實務經驗的專業講師授課，課程涵蓋身體照顧、生活協助、失智照顧、急救基礎等完整內容。</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💚</div>
+        <div class="feature-title">助人助己，有意義的工作</div>
+        <div class="feature-desc">長照工作讓你每天都能實質幫助需要關懷的長輩，在台灣超高齡社會中，你的付出具有深遠的社會影響力。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Stats ─── -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div>
+        <span class="stat-num">89.9%</span>
+        <div class="stat-label">長照服務涵蓋率<br><small style="opacity:0.7">（2025年6月，長照3.0目標）</small></div>
+      </div>
+      <div>
+        <span class="stat-num">15,051</span>
+        <div class="stat-label">長照服務據點<br><small style="opacity:0.7">（2024年底，成長21倍）</small></div>
+      </div>
+      <div>
+        <span class="stat-num">3萬+</span>
+        <div class="stat-label">照服員月薪起<br><small style="opacity:0.7">（依工作量彈性調整）</small></div>
+      </div>
+      <div>
+        <span class="stat-num">200小時</span>
+        <div class="stat-label">完整培訓課程<br><small style="opacity:0.7">（政府認可標準時數）</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Process ─── -->
+<section class="process">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">加入流程</div>
+      <h2 class="section-title">4個步驟，開啟長照新職涯</h2>
+      <p class="section-sub">從諮詢到上工，全程由長照重陽陪伴，讓你輕鬆入行。</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <div class="step-title">加入LINE諮詢</div>
+        <div class="step-desc">掃描QR碼或點擊連結，加入長照重陽LINE，與培訓顧問一對一了解課程內容</div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <div class="step-title">報名免費培訓</div>
+        <div class="step-desc">填寫報名資料，確認培訓時間，完全免費，無任何隱藏費用</div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <div class="step-title">完成200小時課程</div>
+        <div class="step-desc">參加專業課程，學習照顧技能，並取得結訓證書及政府長照服務人員證明</div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <div class="step-title">立即媒合上工</div>
+        <div class="step-desc">由長照重陽專人媒合適合的服務個案，月薪3萬起，正式開始長照職涯</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Who Can Join ─── -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">適合對象</div>
+      <h2 class="section-title">哪些人適合加入長照重陽？</h2>
+      <p class="section-sub">不需要任何醫療背景，只要有愛心與耐心，都歡迎加入。</p>
+    </div>
+    <div class="who-grid">
+      <div class="who-card">
+        <div class="who-icon">👩</div>
+        <div>
+          <div class="who-title">二度就業女性</div>
+          <div class="who-desc">曾因家庭暫離職場，想重返職場的女性，彈性工時完全配合家庭需求</div>
+        </div>
+      </div>
+      <div class="who-card">
+        <div class="who-icon">👴</div>
+        <div>
+          <div class="who-title">中高齡求職者</div>
+          <div class="who-desc">55歲以上、具生活照顧經驗者優先，人生閱歷是長照工作的最大優勢</div>
+        </div>
+      </div>
+      <div class="who-card">
+        <div class="who-icon">👨‍👩‍👧</div>
+        <div>
+          <div class="who-title">家庭照顧者</div>
+          <div class="who-desc">已在照顧家中長輩，想將照顧技能專業化，同時獲得收入的家屬</div>
+        </div>
+      </div>
+      <div class="who-card">
+        <div class="who-icon">🎓</div>
+        <div>
+          <div class="who-title">社福相關科系</div>
+          <div class="who-desc">護理、社工、長照相關科系學生或應屆畢業生，取得實務經驗的最佳起點</div>
+        </div>
+      </div>
+      <div class="who-card">
+        <div class="who-icon">🔄</div>
+        <div>
+          <div class="who-title">想轉職者</div>
+          <div class="who-desc">對現有工作不滿意，想找一份穩定且有意義的工作，長照是絕佳選擇</div>
+        </div>
+      </div>
+      <div class="who-card">
+        <div class="who-icon">🌍</div>
+        <div>
+          <div class="who-title">新住民朋友</div>
+          <div class="who-desc">在台灣落地生根，想融入社區、建立穩定收入的新住民，長照是友善的入行管道</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ ─── -->
+<section style="background:#f9fafb;">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">常見問題</div>
+      <h2 class="section-title">你最想知道的問題，我們都回答</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">培訓課程真的完全免費嗎？有隱藏費用嗎？</div>
+        <div class="faq-a">是的，長照重陽的培訓課程完全不收取任何費用，包含教材、課程、認證申請輔助，全部由公司承擔。我們的目標是降低入行門檻，讓更多人有機會加入長照行業，不存在任何隱藏費用。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">沒有任何照顧經驗，可以報名嗎？</div>
+        <div class="faq-a">完全可以！我們的課程從最基礎的照顧知識開始，不需要任何醫療或照顧背景。只要您有愛心、耐心，願意學習，我們的專業師資會從零開始帶領您。許多學員都是完全沒有相關背景的社會人士，結訓後都順利取得證照並上工。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">課程時間怎麼安排？需要請假嗎？</div>
+        <div class="faq-a">課程共200小時，我們會依照學員需求安排平日或假日班，盡量配合大家的時間。具體上課時間請加入LINE後與培訓顧問詳細討論，我們會盡力安排最適合您的時段。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">結訓後一定能找到工作嗎？</div>
+        <div class="faq-a">長照重陽目前有大量服務訂單等待人力，結訓後由專人協助媒合，優先安排距離近的服務個案。台灣長照3.0上路後，照服員需求持續增加，就業前景非常穩定。我們承諾結訓後全力協助媒合，讓您盡快開始工作。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">工作地點和時間可以自己選擇嗎？</div>
+        <div class="faq-a">居家服務的工作地點以您的居住地附近為主，我們會盡量安排距離近的個案，減少通勤時間。工作時間依個案需求和您的可用時段協調，全職或兼職均可，非常彈性，適合有家庭需求的求職者。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">長照3.0對照服員的薪資有影響嗎？</div>
+        <div class="faq-a">長照3.0擴大了服務對象和補助範圍，服務量增加直接帶動照服員的收入提升。目前居家照服員月薪約3萬元起，隨著服務時數增加和技能提升，收入可進一步成長。政府也持續推動薪資改善方案，長照從業人員的待遇正在逐步提升。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Final CTA ─── -->
+<section class="final-cta">
+  <div class="container">
+    <h2>現在就加入，<em>改變你的職涯</em></h2>
+    <p>長照3.0帶來的就業機會正在發生。免費培訓名額有限，立即加入LINE，與培訓顧問一對一諮詢，開啟你的長照新職涯。</p>
+    <div class="cta-group">
+      <a href="https://line.me/ti/p/VqdhzGY5_z" target="_blank" rel="noopener" class="btn-line" style="display:inline-flex;align-items:center;gap:10px;background:#06C755;color:#fff;font-weight:700;font-size:1.1rem;padding:18px 40px;border-radius:50px;text-decoration:none;box-shadow:0 8px 24px rgba(6,199,85,0.4);">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:22px;height:22px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.630 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+        加入LINE，免費報名培訓
+      </a>
+    </div>
+    <p style="margin-top:1.5rem;font-size:0.875rem;color:rgba(255,255,255,0.5);">
+      加入後即可與培訓顧問一對一諮詢 · 完全免費 · 無任何費用
+    </p>
+  </div>
+</section>
+
+<!-- ─── Footer ─── -->
+<footer>
+  <div class="footer-logo">🌿 長照重陽</div>
+  <div class="footer-links">
+    <a href="https://line.me/ti/p/VqdhzGY5_z" target="_blank">LINE諮詢</a>
+    <span>|</span>
+    <a href="https://1966.gov.tw" target="_blank">長照1966專線</a>
+    <span>|</span>
+    <a href="https://www.mohw.gov.tw" target="_blank">衛生福利部</a>
+  </div>
+  <p>© 2026 長照重陽 · 長照服務人員培訓 · 長照3.0</p>
+  <p style="margin-top:8px;font-size:0.8rem;opacity:0.5;">本頁面僅供招募諮詢使用，長照補助資訊以衛生福利部官方公告為準。</p>
+</footer>
+
+<!-- ─── Sticky Bottom Bar ─── -->
+<div class="sticky-bar">
+  <a href="https://line.me/ti/p/VqdhzGY5_z" target="_blank" rel="noopener" class="btn-line">
+    💬 加入LINE免費諮詢
+  </a>
+</div>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>
